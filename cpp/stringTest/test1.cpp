@@ -11,9 +11,18 @@ int main() {
 // check if # x 4
 // 
 	
-	for(int i = 0; i < Testo; i++){
-		if(Testo[i] == "#"){
-			// -
+	for (int i = 0; i < Testo; i++){
+		int HashCount = 0;
+		if (Testo[i] == "."){
+			testText.replace(Testo[i], 1, "#");
+			HashCount++;
+			if (HashCount == 4){
+				std::cout << "[" << testText << "]" << std::endl;
+				
+				// timer
+
+				// then reset HashCount
+			}
 		} else {
 
 		}
