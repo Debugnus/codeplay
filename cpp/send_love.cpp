@@ -7,6 +7,8 @@ int main() {
 	std::this_thread::sleep_for(2000ms);
 	std::cout << "Attepting to send love...\n";
 
+	///// code too simple.  Testing string algorithm
+
 	std::this_thread::sleep_for(2000ms);
 	std::cout << "[####.................10%]\n";
 
