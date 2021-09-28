@@ -6,7 +6,7 @@
 using namespace std::chrono_literals;
 
 int main() {
-	std::string testText("........................................");
+	std::string testText("............................");
 
 	int Testo = testText.length();
 	double dots = Testo; // convert Testo to double for calculating percentages
