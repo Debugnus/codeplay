@@ -14,7 +14,11 @@ int main() {
 	int HashCount = 0; // used to count and limit to 4 hashes each time
 	int iHash = 0; // for saving HashCounts into
 
-	int HashTotal = 0;		
+	int HashTotal = 0;
+
+	// preparing ...
+
+	std::cout << "Start sending love...\n";
 
 	for (int i = 0; i < Testo; i++){
 		if (testText.compare(".") != 0){	// test if Period character found
