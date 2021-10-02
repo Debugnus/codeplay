@@ -17,9 +17,12 @@ int main() {
 	int HashTotal = 0;
 
 	// preparing ...
-
-	std::cout << "Start sending love...\n";
-
+	std::cout << "Prepairing to send love...\n";
+	std::this_thread::sleep_for(2000ms);
+	std::cout << "Initializing love...\n";
+	std::this_thread::sleep_for(1000ms);
+	std::cout << "Sending love...\n";
+	std::this_thread::sleep_for(500ms);
 	for (int i = 0; i < Testo; i++){
 		if (testText.compare(".") != 0){	// test if Period character found
 			testText.replace(i, 1, "#");	// replace Period with Hash
@@ -27,7 +30,7 @@ int main() {
 			if (HashCount == 4){	// is HashCount 4?
 				iHash += HashCount; 
 				HashTotal = (iHash/dots)*100;
-				std::cout << "[" << testText << "]" << HashTotal << std::endl;
+				std::cout << "[" << testText << "]" << HashTotal << "%"  << std::endl;
 				
 				std::this_thread::sleep_for(2000ms);
 
