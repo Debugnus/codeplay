@@ -34,6 +34,10 @@ int main() {
 				
 				std::this_thread::sleep_for(2000ms);
 
+				if (HashTotal == 100) {
+						std::cout << "Love sent.\n";
+				}
+
 				HashCount = 0;
 
 			}
